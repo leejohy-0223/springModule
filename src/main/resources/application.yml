@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: jhlee
+server:
+  port: 232
+---
+
+property:
+  test:
+    name: property depth test
+
+# ConfigurationProperties
+
+fruit:
+  list:
+    - name: banana
+      color: yellow
+    - name: apple
+      color: red
+  color_name: blue
+
+datasource:
+  url: jdbc:h2:mem:testdb
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-jh
